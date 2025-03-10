@@ -9,9 +9,9 @@ string password = "2409106095";
 int main() {
     string inputUser, inputPass;
     cout << "=== Login User ===\n";
-    cout << "Masukkan Username : ";
+    cout << "Masukkan Username (Nama Lengkap) : ";
     getline(cin, inputUser);
-    cout << "Masukkan Password(NIM) :";
+    cout << "Masukkan Password (NIM) : ";
     cin >> inputPass;
 
     if (inputUser != username || inputPass != password) {
@@ -96,6 +96,13 @@ do {
                     cout << "Keliling Lingkaran : " << 2 * 3.14 * r << "\n";
                     break;
                 }
+                case 4: {
+                    float a, b, c;
+                    cout << "Masukkan Panjang sisi-sisi segitiga (a, b, c) : ";
+                    cin >> a >> b >> c;
+                    cout << "Keliling Segitiga : " << a + b + c << "\n";
+                    break;
+                }
             }
             break;
         }
@@ -120,13 +127,13 @@ do {
                     cout << "Volume Balok: " << panjang * lebar * tinggi << "\n";
                     break; 
                 }
-                case 3: {
-                    float r;
-                    cout << "Masukkan jari-jari: ";
-                    cin >> r;
-                    cout << "Volume Bola: " << (4.0/3.0) * 3.14 * r * r * r << "\n";
-                    break;
-                }
+                    case 3: {
+                        float r;
+                        cout << "Masukkan jari-jari: ";
+                        cin >> r;
+                        cout << "Volume Bola: " << (4.0/3.0) * 3.14 * r * r * r << "\n";
+                        break;
+                    }
                 case 4: {
                     float r, tinggi;
                     cout << "Masukkan jari-jari dan tinggi: ";
